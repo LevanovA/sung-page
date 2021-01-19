@@ -1,0 +1,78 @@
+.about {
+    border-top: 2px solid $c-border;
+    border-bottom: 2px solid $c-border;
+    background: linear-gradient(90deg, #F1EDE6 0%, #FAF8F3 100%);
+}
+
+.about__flex {
+    display: flex;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.about__el {
+
+    &:first-child {
+        flex-grow: 1;
+        margin-right: 40px;
+    }
+
+    &:last-child {
+        flex-shrink: 0;
+    }
+}
+
+.about__issn {
+    margin-bottom: 35px;
+}
+
+.about__title {
+    max-width: 850px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 72px;
+    color: $c-text-dark-blue;
+}
+
+.about__description {
+    max-width: 894px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 27px;
+
+    &-name {
+        font-weight: 700;
+        color: $c-text-dark-blue;
+    }
+}
+
+.about__ethics {
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.about__icon {
+    margin-right: 10px;
+
+    & svg {
+        display: block;
+    }
+}
+
+.about__ethics-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-decoration-line: underline;
+    color: $c-link-main;
+}
+
+.about__preview {
+    margin-bottom: 45px;
+}

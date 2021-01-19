@@ -27,6 +27,7 @@
     line-height: 23px;
     color: $c-link-main;
     text-decoration: none;
+    transition: 0.5s;
 
     &:hover {
         color: $c-link-hover;
@@ -40,6 +41,11 @@
     margin-right: 60px;
     padding: 0;
     cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+        opacity: 0.5;
+    }
 
     .icon-user {
         display: block;
