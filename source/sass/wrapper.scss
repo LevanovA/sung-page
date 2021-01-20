@@ -15,12 +15,33 @@
     padding: 0 50px;
 }
 
-.wrapper__strip{
+.wrapper__strip {
+    flex-shrink: 0;
     width: 74px;
     padding: 0 12px;
     background: transparent;
     border-right: 1px solid #000957;
     border-left: 1px solid #000957;
+
+    &--start {
+        padding-top: 16px;
+    }
+
+    &--white {
+        background-color: #ffffff;
+    }
+
+    &--archive {
+        position: relative;
+
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px;
+            height: 5px;
+        }
+    }
 }
 
 .wrapper__inner-el{

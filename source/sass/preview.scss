@@ -8,7 +8,7 @@
 }
 
 .preview__text {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
@@ -18,5 +18,18 @@
 
     &:hover {
         opacity: 0.5;
+    }
+}
+
+.preview--archive {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 148px;
+    height: 100%;
+
+    & .preview__text {
+        display: block;
+        text-align: center;
     }
 }

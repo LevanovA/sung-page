@@ -1,0 +1,65 @@
+.editor {
+    width: 33.25%;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.editor__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+
+.editor__flex {
+    display: flex;
+    align-items: center;
+}
+
+.editor__block {
+
+    &:first-child {
+        margin-right: 24px;
+    }
+}
+
+.editor__name, .editor__surname {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.editor__surname {
+    margin-bottom: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.editor__publications {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    line-height: 22px;
+    color: $c-text-dark-blue;
+    border-bottom: 1px solid #86869B;
+}
+
+.editor__link {
+    display: flex;
+    align-items: center;
+}
+
+.editor__fb {
+    margin-right: 10px;
+
+    & .icon-editor-fb {
+        display: block;
+    }
+}
+
+.editor__organization {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: $c-text-dark-blue;
+}
