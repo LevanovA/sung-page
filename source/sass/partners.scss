@@ -1,0 +1,33 @@
+.partners__menu {
+    max-width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    padding: 120px 50px 24px 0;
+    border-bottom: 1px solid #86869B;
+}
+
+.partners_name {
+    font-size: 36px;
+    line-height: 46px;
+    color: #D8D8D8;
+
+    &--active {
+        color: $c-text-dark-blue;
+    }
+}
+
+.partners__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 120px;
+    margin: 0 -20px;
+}
+
+.partners__item {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    margin-bottom: 80px;
+    padding: 0 20px;
+}

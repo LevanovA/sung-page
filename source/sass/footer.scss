@@ -1,0 +1,46 @@
+.footer {
+    background-color: #F5F5F5;
+}
+
+.footer__flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    padding-top: 80px;
+}
+
+.footer__block {
+    width: 45%;
+}
+
+.footer__heading {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.footer__text {
+    font-size: 16px;
+    line-height: 24px;
+
+    &--first {
+        min-height: 160px;
+    }
+
+    &--second {
+        margin-bottom: 20px;
+    }
+}
+
+.footer__license {
+    margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.footer__right {
+    padding-bottom: 40px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #5A5A5A;
+}

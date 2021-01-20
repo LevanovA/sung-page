@@ -13,6 +13,15 @@
 .wrapper__box {
     flex-grow: 1;
     padding: 0 50px;
+
+    &--archive {
+        border-top: 2px solid $c-border;
+        border-bottom: 2px solid $c-border;
+    }
+
+    &--footer {
+        border-top: 2px solid $c-border;
+    }
 }
 
 .wrapper__strip {
@@ -25,6 +34,10 @@
 
     &--start {
         padding-top: 16px;
+    }
+
+    &--end {
+        padding-bottom: 16px;
     }
 
     &--white {
