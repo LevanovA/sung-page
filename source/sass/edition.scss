@@ -21,6 +21,10 @@
     color: $c-text-dark-blue;
     cursor: pointer;
 
+    &:hover {
+        opacity: 0.5;
+    }
+
     &--active {
         font-weight: bold;
     }

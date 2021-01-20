@@ -7,10 +7,15 @@
     border-bottom: 1px solid #86869B;
 }
 
-.partners_name {
+.partners__name {
     font-size: 36px;
     line-height: 46px;
     color: #D8D8D8;
+    cursor: pointer;
+
+    &:hover {
+        color: $c-text-dark-blue;
+    }
 
     &--active {
         color: $c-text-dark-blue;
@@ -18,10 +23,14 @@
 }
 
 .partners__list {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     padding-bottom: 120px;
     margin: 0 -20px;
+
+    &.active {
+        display: flex;
+    }
 }
 
 .partners__item {
