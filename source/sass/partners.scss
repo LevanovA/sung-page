@@ -9,6 +9,12 @@
     @include desktop_1366 {
         max-width: 95%;
     }
+
+    @include phones__768 {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 40px 0 12px 0;
+    }
 }
 
 .partners__name {
@@ -28,6 +34,12 @@
     @include desktop_1366 {
         font-size: 30px;
     }
+
+    @include phones__768 {
+        margin-bottom: 20px;
+        font-size: 22px;
+        line-height: 30px;
+    }
 }
 
 .partners__list {
@@ -39,6 +51,10 @@
     &.active {
         display: flex;
     }
+
+    @include phones__768 {
+        padding-bottom: 40px;
+    }
 }
 
 .partners__item {
@@ -47,4 +63,10 @@
     width: 25%;
     margin-bottom: 80px;
     padding: 0 20px;
+
+    @include phones__768 {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+
 }

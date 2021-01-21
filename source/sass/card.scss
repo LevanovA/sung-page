@@ -3,6 +3,14 @@
     width: 33.25%;
     margin-bottom: 32px;
     padding: 0 12px;
+
+    @include tablets_1024 {
+        width: 50%;
+    }
+
+    @include phones__768 {
+        width: 100%;
+    }
 }
 
 .card__list {
@@ -10,6 +18,10 @@
     flex-wrap: wrap;
     margin: 0 -12px;
     padding-bottom: 88px;
+
+    @include phones__768 {
+        padding-bottom: 40px;
+    }
 }
 
 .card__container {
@@ -21,12 +33,22 @@
     justify-content: space-between;
     height: 120px;
     padding: 16px 16px 0;
+
+    @include phones__768 {
+        height: auto;
+        padding: 16px;
+    }
 }
 
 .card__heading {
     margin-right: 12px;
     font-size: 18px;
     line-height: 25px;
+
+    @include phones__768 {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 .card__arrow {
@@ -61,32 +83,78 @@
 
 .card:first-child {
     width: 66.5%;
+
+    @include tablets_1024 {
+        width: 100%;
+    }
 }
 
 .card:first-child .card__box,
 .card:nth-child(2) .card__box {
     height: 150px;
+
+    @include tablets_1024 {
+        height: auto;
+        padding: 16px;
+    }
 }
 
 .card:first-child .card__heading {
     font-size: 28px;
     line-height: 34px;
+
+    @include phones__768 {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 .card:first-child .card__arrow .icon-arrow,
 .card:nth-child(2) .card__arrow .icon-arrow {
     width: 36px;
+
+    @include phones__768 {
+        width: 28px;
+    }
 }
 
 .card:first-child .card__img-link {
     padding-bottom: 37%;
 }
 
+.card:nth-child(2) .card__box {
+
+    @include tablets_1024 {
+        height: 120px;
+    }
+
+    @include phones__768 {
+        height: auto;
+    }
+}
+
+.card:nth-child(2) .card__arrow .icon-arrow {
+
+    @include tablets_1024 {
+        width: 28px;
+    }
+
+}
+
 .card:nth-child(2) .card__heading {
     font-size: 22px;
     line-height: 26px;
+
+    @include tablets_1024 {
+        font-size: 18px;
+        line-height: 25px;
+    }
 }
 
 .card:nth-child(2) .card__img-link {
     padding-bottom: 76%;
+
+    @include tablets_1024 {
+        padding-bottom: 43%;
+    }
 }

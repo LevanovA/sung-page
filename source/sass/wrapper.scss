@@ -7,20 +7,49 @@
 
     &--about {
         padding-left: 144px;
+
+        @include tablets_1024 {
+            padding-left: 114px;
+        }
+
+        @include phones__768 {
+            padding-left: 70px;
+        }
+
+        @include phones__480 {
+            padding: 0 20px;
+        }
     }
 }
 
 .wrapper__box {
     flex-grow: 1;
     padding: 0 50px;
+    position: relative;
 
     &--archive {
         border-top: 2px solid $c-border;
         border-bottom: 2px solid $c-border;
+
+        @include phones__480 {
+            border: none;
+        }
     }
 
     &--footer {
         border-top: 2px solid $c-border;
+
+        @include phones__480 {
+            border: none;
+        }
+    }
+
+    @include tablets_1024 {
+        padding: 0 20px;
+    }
+
+    @include phones__480 {
+        padding: 0;
     }
 }
 
@@ -31,6 +60,15 @@
     background: transparent;
     border-right: 1px solid #000957;
     border-left: 1px solid #000957;
+
+    @include phones__768 {
+        width: 30px;
+        padding: 0 5px;
+    }
+
+    @include phones__480 {
+        display: none;
+    }
 
     &--start {
         padding-top: 16px;

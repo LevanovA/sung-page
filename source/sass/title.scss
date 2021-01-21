@@ -3,4 +3,9 @@
     font-size: 40px;
     line-height: 51px;
     color: $c-text-dark-blue;
+
+    @include phones__768 {
+        font-size: 30px;
+        line-height: 41px;
+    }
 }

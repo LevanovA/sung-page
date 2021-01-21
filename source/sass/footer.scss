@@ -7,10 +7,24 @@
     justify-content: space-between;
     margin-bottom: 80px;
     padding-top: 80px;
+
+    @include tablets_1024 {
+        flex-direction: column;
+    }
 }
 
 .footer__block {
     width: 45%;
+
+    @include tablets_1024 {
+        width: 100%;
+    }
+
+    &:first-child {
+        @include tablets_1024 {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 .footer__heading {
@@ -25,6 +39,10 @@
 
     &--first {
         min-height: 160px;
+
+        @include tablets_1024 {
+            min-height: auto;
+        }
     }
 
     &--second {

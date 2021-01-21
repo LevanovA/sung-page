@@ -1,16 +1,29 @@
 .edition__heading {
     margin-bottom: 16px;
     padding-top: 120px;
+
+    @include phones__768 {
+        padding-top: 40px;
+    }
 }
 
 .edition__description {
-    margin-bottom: 120px;
+    margin-bottom: 40px;
     font-size: 22px;
     line-height: 28px;
+
+    @include phones__768 {
+        font-size: 18px;
+        line-height: 24px;
+    }
 }
 
 .edition__menu {
     display: flex;
+
+    @include phones__768 {
+        flex-direction: column;
+    }
 }
 
 .edition__menu-name {
@@ -27,6 +40,10 @@
 
     &--active {
         font-weight: bold;
+    }
+
+    @include phones__768 {
+       margin-bottom: 20px;
     }
 }
 
@@ -47,12 +64,25 @@
     &:hover {
         opacity: 0.5;
     }
+
+    @include phones__768 {
+        margin-bottom: 40px;
+    }
 }
 
 .edition__link-box {
     display: flex;
+
+    @include phones__768 {
+        flex-direction: column;
+    }
 }
 
 .edition__link:first-child {
     margin-right: 20px;
+
+    @include phones__768 {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
