@@ -1,3 +1,26 @@
+'use strict';
+
+$(document).ready(function(){
+
+    $('.burger').on('click', function(){
+        $(this).toggleClass('burger--active')
+    });
+});
+
+'use strict';
+
+$(document).ready(function(){
+
+    $('a').on('click', function(e){
+        e.preventDefault();
+    });
+
+    $('.js-submenu').on('click', function(){
+        $(this).toggleClass('active')
+        $(this).find('.menu__sublist').slideToggle(400);
+    });
+});
+
 'use strick'
 
 $('.button--modal-open').on('click', function () {
@@ -60,7 +83,6 @@ $(document).ready(function(){
             $(`.js-${type}`).addClass('active');
             $(this).addClass('partners__name--active')
         }
-        console.log(type)
     });
 });
 

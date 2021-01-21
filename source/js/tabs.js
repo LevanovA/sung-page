@@ -14,6 +14,5 @@ $(document).ready(function(){
             $(`.js-${type}`).addClass('active');
             $(this).addClass('partners__name--active')
         }
-        console.log(type)
     });
 });

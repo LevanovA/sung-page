@@ -5,6 +5,10 @@
     margin-bottom: 64px;
     padding: 120px 50px 24px 0;
     border-bottom: 1px solid #86869B;
+
+    @include desktop_1366 {
+        max-width: 95%;
+    }
 }
 
 .partners__name {
@@ -19,6 +23,10 @@
 
     &--active {
         color: $c-text-dark-blue;
+    }
+
+    @include desktop_1366 {
+        font-size: 30px;
     }
 }
 

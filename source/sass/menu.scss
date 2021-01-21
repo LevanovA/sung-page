@@ -2,13 +2,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
+    height: 120px;
 }
 
 .menu__list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 60%;
+    height: 100%;
+
+    @include desktop_1366 {
+        width: 80%;
+    }
 }
 
 .menu__user {
@@ -18,8 +24,40 @@
 }
 
 .menu__item {
+    position: relative;
     display: flex;
-     align-items: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 12px;
+    transition: 0.5s;
+
+    &.active {
+        background-color: #ffffff;
+    }
+}
+
+.menu__item ul[class] {
+    display: none;
+    position: absolute;
+    top: 122px;
+    left: 0;
+    min-width: 361px;
+    padding: 12px;
+    background-color: #ffffff;
+}
+
+.menu__subitem {
+    padding-bottom: 8px;
+
+    & a {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.menu__subitem:not(:last-child) {
+    margin-bottom: 8px;
+    border-bottom: 1px solid #F7F4ED;
 }
 
 .menu__link {
@@ -49,6 +87,10 @@
 
     .icon-user {
         display: block;
+    }
+
+    @include desktop_1366 {
+        margin-right: 20px;
     }
 }
 
