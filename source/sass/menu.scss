@@ -3,6 +3,12 @@
     justify-content: space-between;
     align-items: center;
     height: 120px;
+
+    @include tablets_1024 {
+        height: auto;
+        min-height: 80px;
+        padding: 20px 0;
+    }
 }
 
 .menu__list {
@@ -14,6 +20,11 @@
 
     @include desktop_1366 {
         width: 80%;
+    }
+
+    @include tablets_1024 {
+        display: none;
+        flex-direction: column;
     }
 }
 
@@ -34,6 +45,16 @@
     &.active {
         background-color: #ffffff;
     }
+
+    @include tablets_1024 {
+        display: block;
+    }
+}
+
+.menu__item:not(:last-child) {
+    @include tablets_1024 {
+        margin-bottom: 20px;
+    }
 }
 
 .menu__item ul[class] {
@@ -44,6 +65,12 @@
     min-width: 361px;
     padding: 12px;
     background-color: #ffffff;
+
+    @include tablets_1024 {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
 }
 
 .menu__subitem {
@@ -61,6 +88,8 @@
 }
 
 .menu__link {
+    display: flex;
+    align-items: center;
     font-size: 18px;
     line-height: 23px;
     color: $c-link-main;
@@ -69,6 +98,14 @@
 
     &:hover {
         color: $c-link-hover;
+
+        @include tablets_1024 {
+            color: $c-link-main;
+        }
+    }
+
+    @include tablets_1024 {
+        justify-content: center;
     }
 }
 
@@ -123,6 +160,7 @@
 }
 
 .menu__arrow {
+    display: block;
     width: 8px;
     height: 8px;
     margin-left: 8px;
