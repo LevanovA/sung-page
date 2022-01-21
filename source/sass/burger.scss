@@ -11,6 +11,13 @@
         display: block;
         margin-right: 10px;
     }
+
+    &--search-active {
+
+        @include tablets_1024 {
+            display: none;
+        }
+    }
 }
 
 .burger__strip,

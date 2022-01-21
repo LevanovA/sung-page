@@ -3,10 +3,11 @@
     justify-content: space-between;
     align-items: center;
     height: 120px;
+    position: relative;
 
     @include tablets_1024 {
         height: auto;
-        min-height: 80px;
+        min-height: 90px;
         padding: 20px 0;
     }
 }
@@ -99,6 +100,10 @@
         top: auto;
         left: auto;
     }
+
+    @include phones__768 {
+        min-width: 280px;
+    }
 }
 
 .menu__subitem {
@@ -141,7 +146,7 @@
     background: transparent;
     border: none;
     outline: none;
-    margin-right: 60px;
+    margin-right: 20px;
     padding: 0;
     cursor: pointer;
     transition: 0.5s;
@@ -195,4 +200,110 @@
     border-right: 1px solid $c-border;
     border-bottom: 1px solid $c-border;
     transform: rotate(45deg);
+}
+
+.menu__search {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    width: 100%;
+}
+
+.menu__search-form {
+    display: flex;
+    align-items: center;
+    width: 33px;
+    transition: 0.5s;
+
+    @include tablets_1024 {
+        width: 20px;
+        height: auto;
+    }
+}
+
+.menu__list--search-active {
+    opacity: 0;
+    /*width: 100%;*/
+}
+
+.menu__login--search-active {
+    display: none;
+}
+
+.menu__user--search-active {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 100%;
+}
+
+.menu__languages--search-active {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.menu__search-form--search-active {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.menu__search-icon {
+    flex-shrink: 0;
+    cursor: pointer;
+
+    @include tablets_1024 {
+        width: 20px;
+        height: auto;
+    }
+}
+
+.menu__search-form--search-active .menu__search-icon {
+    margin-right: 24px;
+
+    @include tablets_1024 {
+        margin-right: 12px;
+    }
+}
+
+.menu__search-input {
+    display: none;
+    font-size: 30px;
+    line-height: 40px;
+    color: #7A7A7A;
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+    @include tablets_1024 {
+        font-size: 18px;
+        line-height: 24px;
+        min-width: 100px;
+    }
+}
+
+.menu__search-form--search-active .menu__search-input {
+    display: block;
+    flex-grow: 1;
+    margin-right: 24px;
+
+    @include tablets_1024 {
+        margin-right: 12px;
+    }
+}
+
+.menu__search-close {
+    display: none;
+    flex-shrink: 0;
+    cursor: pointer;
+
+    @include tablets_1024 {
+        width: 18px;
+        height: auto;
+    }
+}
+
+.menu__search-form--search-active .menu__search-close {
+    display: block;
 }
