@@ -251,12 +251,9 @@
 
 .menu__search-icon {
     flex-shrink: 0;
+    width: 20px;
+    height: auto;
     cursor: pointer;
-
-    @include tablets_1024 {
-        width: 20px;
-        height: auto;
-    }
 }
 
 .menu__search-form--search-active .menu__search-icon {
@@ -269,16 +266,14 @@
 
 .menu__search-input {
     display: none;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 18px;
+    line-height: 24px;
     color: #7A7A7A;
     background-color: transparent;
     outline: none;
     border: none;
 
     @include tablets_1024 {
-        font-size: 18px;
-        line-height: 24px;
         min-width: 100px;
     }
 }
@@ -296,12 +291,9 @@
 .menu__search-close {
     display: none;
     flex-shrink: 0;
+    width: 18px;
+    height: auto;
     cursor: pointer;
-
-    @include tablets_1024 {
-        width: 18px;
-        height: auto;
-    }
 }
 
 .menu__search-form--search-active .menu__search-close {
